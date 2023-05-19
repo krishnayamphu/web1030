@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+     div{
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        border:5px solid red;
+        background-color:teal;
+     }
+     .dashed{ border: 5px dashed red;}
+     .dotted{ border: 5px dotted red;}
+     .groove{ border:5px groove red;}
+     .outset{ border: 5px outset red;}
+     .box1{ 
+        border:none;
+        border-left: 5px solid red;
+    }
+    .box2{ 
+        border:none;
+        border-left: 5px solid red;
+        border-right: 5px solid yellow;
+    }
+    .box3{
+        width: 0;
+        height: 0;
+        border-top: 50px solid red;
+        border-right: 50px solid green;
+        border-bottom: 50px solid blue;
+        border-left: 50px solid yellow;
+    }
+
+    .box4{
+        width: 0;
+        height: 0;
+        background-color: transparent;
+        border-top: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 50px solid yellow;
+    }
+    </style>
+</head>
+<body>
+<div></div>
+<div class="dashed"></div>
+<div class="dotted"></div>
+<div class="groove"></div>
+<div class="outset"></div>
+
+<div class="box1"></div>
+<div class="box2"></div>
+
+<div class="box3"></div>
+<div class="box4"></div>
+
+</body>
+</html>
