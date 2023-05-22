@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #ccc;
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid #222;
+            padding: 5px 15px;
+        }
+        .holiday{
+            background-color: red;
+            color:white
+        }
+        span{padding-left: 70%;}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">MAY <span>2023</span></th>
+            </tr>
+            <tr>
+                <th>SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th class="holiday">SAT</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td class="holiday">6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td class="holiday">9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td class="holiday">13</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
