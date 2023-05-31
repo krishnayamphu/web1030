@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #323232;
+        }
+
+        .dropdown {
+            background-color: aqua;
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .dropdown span {
+            display: block;
+            padding: 5px 21px;
+        }
+
+        .dropdown-list {
+            background-color: #ccc;
+            border-radius: 0 0 2px 2px;
+            border: 1px solid #c0c0c0;
+            position: absolute;
+            display: none;
+        }
+
+        .dropdown-list a {
+            display: block;
+            padding: 5px 15px;
+            text-decoration: none;
+            color: #323232;
+            border-bottom: 1px solid #c0c0c0;
+        }
+
+        .dropdown-list a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-list a:hover {
+            background-color: #323232;
+            color: white;
+        }
+
+        .dropdown:hover {
+            background-color: rgb(4, 230, 230);
+        }
+
+        .dropdown:hover span {
+            color: white;
+            cursor: default;
+        }
+
+        .dropdown:hover .dropdown-list {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <span>Dropdown</span>
+        <div class="dropdown-list">
+            <a href="#">dropdown 1</a>
+            <a href="#">dropdown 2</a>
+            <a href="#">dropdown 3</a>
+        </div><!-- /.dropdown-list -->
+    </div><!-- /.dropdown -->
+</body>
+
+</html>

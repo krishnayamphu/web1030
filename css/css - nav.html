@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #323232;
+        }
+
+        nav {
+            background-color: darkgreen;
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            display: block;
+        }
+
+        nav ul ul {
+            background: rgb(44, 175, 51);
+            position: absolute;
+            width: 150px;
+            display: none;
+        }
+
+        nav ul li li {
+            width: 100%;
+        }
+
+        nav ul li:hover {
+            background-color: teal;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a>
+                <ul>
+                    <li><a href="">Services 1</a></li>
+                    <li><a href="">Services 2</a></li>
+                    <li><a href="">Services 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Blog</a>
+                <ul>
+                    <li><a href="">Services 1</a></li>
+                    <li><a href="">Services 2</a></li>
+                    <li><a href="">Services 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
