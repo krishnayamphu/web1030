@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            transition: all 1s;
+        }
+
+        .container {
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            margin: 30px;
+            float: left;
+            background-color: transparent;
+            perspective: 500px;
+
+        }
+
+        .box1:hover {
+            transform: rotateX(45deg);
+        }
+
+        .box2:hover {
+            transform: rotateY(45deg);
+        }
+
+        .box3:hover {
+            transform: rotateZ(360deg);
+        }
+
+        .box4:hover {
+            transform: translateX(50px);
+        }
+
+        .box5:hover {
+            transform: translateY(50px);
+        }
+
+        .box6:hover {
+            transform: translateZ(-100px);
+        }
+
+        .box7:hover {
+            transform: scaleX(2);
+        }
+
+        .box8:hover {
+            transform: scaleY(2);
+        }
+
+        .box9:hover {
+            transform: scaleZ(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box</div>
+    </div>
+    <div class="container">
+        <div class="box2">box</div>
+    </div>
+    <div class="container">
+        <div class="box3">box</div>
+    </div>
+    <div class="container">
+        <div class="box4">box</div>
+    </div>
+    <div class="container">
+        <div class="box5">box</div>
+    </div>
+    <div class="container">
+        <div class="box6">box</div>
+    </div>
+    <div class="container">
+        <div class="box7">box</div>
+    </div>
+    <div class="container">
+        <div class="box8">box</div>
+    </div>
+    <div class="container">
+        <div class="box9">box</div>
+    </div>
+
+
+</body>
+
+</html>
