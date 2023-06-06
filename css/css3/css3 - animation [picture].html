@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        @keyframes changePic {
+            from {
+                background-color: red;
+                background-image: url('../bug.jpg');
+                background-size: cover;
+            }
+
+            to {
+                background-color: blue;
+                background-image: url('../rose.jpg');
+                background-size: cover;
+            }
+
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            animation-name: changePic;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+</body>
+
+</html>

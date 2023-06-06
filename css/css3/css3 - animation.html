@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        @keyframes changeBg {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+
+        }
+
+        @keyframes moveBox {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 80%;
+                transform: rotate(360deg);
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes bigFont {
+            0% {
+                font-size: 20px;
+            }
+
+            100% {
+                font-size: 60px;
+            }
+
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+        }
+
+        .box1 {
+            animation-name: changeBg;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        .box2 {
+            animation-name: moveBox;
+            position: relative;
+            background-color: red;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        h1 {
+            animation-name: bigFont;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <h1>ANIMATION</h1>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        img {
+            width: 200px;
+            height: 250px;
+            border: 2px solid green;
+            margin: 15px;
+        }
+
+        .img-cover {
+            object-fit: cover;
+        }
+
+        .img-contain {
+            object-fit: contain;
+        }
+
+        .img-fill {
+            object-fit: fill;
+        }
+
+        .img-top {
+            object-position: top;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="img-cover" src="../rose.jpg" alt="">
+    <img class="img-contain" src="../rose.jpg" alt="">
+    <img class="img-fill" src="../rose.jpg" alt="">
+    <img class="img-contain img-top" src="../rose.jpg" alt="">
+</body>
+
+</html>
