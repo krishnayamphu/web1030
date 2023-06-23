@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <p id="mycontent"></p>
+    <input type="text" id="name" value="Aptech">
+    <button onclick="getValue()">Get Value</button>
+    <script>
+        document.getElementById("mycontent").innerHTML = "Hello world";
+        document.getElementById("mycontent").style.color = "red";
+        document.getElementById("mycontent").style.backgroundColor = "black";
+
+        function getValue() {
+            let data = document.getElementById("name").value;
+            alert(data);
+            console.log(data);
+        }
+
+    </script>
+</body>
+
+</html>

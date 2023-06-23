@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <form name="frm">
+        <input type="text" name="username" placeholder="Username">
+        <br><br>
+        <input type="password" name="password" placeholder="Password">
+        <br><br>
+        <button type="button" onclick="auth()">Login</button>
+    </form>
+    <script>
+        function auth() {
+            let f = document.forms['frm'];
+            let username = f.username.value;
+            let password = f.password.value;
+            if (username == "") {
+                alert("username feild must be fill");
+                document.forms['frm'].username.focus();
+            }
+            else if (username == "admin" && password == "a123") {
+                alert("welcome admin");
+            } else {
+                alert("Invalid username or password");
+            }
+            console.log(username + " " + password);
+        }
+
+    </script>
+</body>
+
+</html>
