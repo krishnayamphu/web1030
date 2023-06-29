@@ -1,0 +1,59 @@
+.brand{
+
+}
+.brand{
+   
+}
+.brand h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+.brand span{
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+}
+
+.head-contact i{
+    color: #fe5f00;
+}
+.head-contact h5{
+    margin-bottom: 0;
+}
+.head-contact p{
+    margin-bottom: 0;
+}
+.bg-accent{
+    background-color: #fe5f00;
+}
+.bg-custom{
+    background-color: #0c1127;
+}
+nav{
+    background-color: #0c1127 !important;
+}
+nav a{
+    font-weight: bold !important;
+    color: white !important;
+}
+nav a.active{
+    color:#fe5f00 !important;
+}
+.search-form{
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+.search-form input{
+    background-color: transparent;
+    border: none;
+    color:white;
+
+}
+.search-form .btn-search{
+    color:white;
+}
